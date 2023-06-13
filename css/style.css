@@ -11,3 +11,12 @@
     background: #0B353D;
     z-index: -1;
 }
+
+@media screen and (max-width: 767px){
+    .max-w-full{
+        padding: 0 15px;
+    }
+    br{
+        display: none;
+    }
+}
