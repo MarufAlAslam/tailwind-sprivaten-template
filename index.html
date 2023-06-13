@@ -28,20 +28,25 @@
       class="header bg-[url('./images/header-bg.png')] bg-no-repeat bg-cover bg-left"
     >
       <div class="max-w-full w-[1300px] mx-auto py-[40px]">
-        <div class="flex justify-between items-center nav">
+        <div class="flex justify-between items-center nav relative">
           <a class="logo text-2xl font-bold"> Sprivaten </a>
 
-          <div class="flex justify-end align-items-center ml-auto">
-            <a class="text-sm text-[#737373] font-[600]"> Home </a>
-            <a class="text-sm text-[#737373] font-[600] block ml-[20px]">
-              Product
-            </a>
-            <a class="text-sm text-[#737373] font-[600] block ml-[20px]">
-              Pricing
-            </a>
-            <a class="text-sm text-[#737373] font-[600] block ml-[20px]">
-              Contact
-            </a>
+          <div class="menu-holder">
+            <div
+              id="menu"
+              class="flex md:flex-row flex-col justify-end align-items-center ml-auto menu"
+            >
+              <a class="text-sm text-[#737373] font-[600]"> Home </a>
+              <a class="text-sm text-[#737373] font-[600] block ml-[20px]">
+                Product
+              </a>
+              <a class="text-sm text-[#737373] font-[600] block ml-[20px]">
+                Pricing
+              </a>
+              <a class="text-sm text-[#737373] font-[600] block ml-[20px]">
+                Contact
+              </a>
+            </div>
           </div>
           <div class="flex justify-end align-items-center ml-[40px]">
             <a class="text-sm text-[#737373] font-[600]">
@@ -89,23 +94,46 @@
                 </defs>
               </svg>
             </a>
+
+            <button class="btn md:hidden block ml-[20px]" id="menu-btn">
+              <svg
+                width="24"
+                height="14"
+                viewBox="0 0 24 14"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M0.571289 0H23.4284V2.28571H0.571289V0ZM6.28557 5.71429H23.4284V8H6.28557V5.71429ZM13.4284 11.4286H23.4284V13.7143H13.4284V11.4286Z"
+                  fill="#737373"
+                />
+              </svg>
+            </button>
           </div>
         </div>
 
         <!-- hero -->
         <div class="hero pt-[90px] pb-[40px]">
-          <div class="flex lg:flex-row flex-col justify-between items-center gap-[120px]">
+          <div
+            class="flex lg:flex-row flex-col justify-between items-center gap-[120px]"
+          >
             <div>
-              <h1 class="md:text-[58px] text-[40px] md:text-left text-center font-[800]">
+              <h1
+                class="md:text-[58px] text-[40px] md:text-left text-center font-[800]"
+              >
                 Drive More <br />
                 Customers <br />
                 Through Digital
               </h1>
-              <p class="my-[25px] font-[500] text-[#737373] text-xl md:text-left text-center">
+              <p
+                class="my-[25px] font-[500] text-[#737373] text-xl md:text-left text-center"
+              >
                 We know how large objects will act, but things on a small scale.
               </p>
 
-              <div class="flex lg:justify-start justify-center items-center gap-[10px]">
+              <div
+                class="flex lg:justify-start justify-center items-center gap-[10px]"
+              >
                 <a
                   class="bg-[#00A0C1] border border-[#00A0C1] text-white rounded-full px-[36px] py-[10px] text-sm font-bold"
                 >
@@ -120,7 +148,7 @@
             </div>
 
             <div class="appointment-form bg-white p-[40px] rounded-[5px]">
-              <form action="">
+              <form class="form">
                 <h2 class="text-2xl font-bold mb-[40px]">Book Appointment</h2>
                 <div>
                   <label class="text-sm font-[600]"> Name* </label>
@@ -156,6 +184,7 @@
                 </div>
                 <div class="mt-[20px]">
                   <button
+                    type="submit"
                     class="bg-[#FFA62B] text-white text-sm font-bold w-full rounded-[5px] py-[15px]"
                   >
                     Book Appointment
@@ -450,7 +479,11 @@
               </defs>
             </svg>
           </a>
-          <img src="images/media-bg.png" alt="" class="w-full mx-auto md:h-auto h-[445px] object-cover" />
+          <img
+            src="images/media-bg.png"
+            alt=""
+            class="w-full mx-auto md:h-auto h-[445px] object-cover"
+          />
         </div>
       </div>
     </section>
@@ -636,8 +669,10 @@
           <p class="font-[600]">Contact Us</p>
           <h2 class="text-[40px] font-bold">Make an Appointment</h2>
 
-          <form class="mt-[40px]">
-            <div class="flex lg:flex-row flex-col justify-between items-center lg:gap-[20px]">
+          <form class="mt-[40px] form">
+            <div
+              class="flex lg:flex-row flex-col justify-between items-center lg:gap-[20px]"
+            >
               <input
                 placeholder="Full Name"
                 type="text"
@@ -649,7 +684,9 @@
                 class="w-full border border-[#BDBDBD] bg-[#F9F9F9] rounded-[5px] px-[15px] py-[10px] mb-[10px] mt-[10px]"
               />
             </div>
-            <div class="flex lg:flex-row flex-col justify-between items-center lg:gap-[20px]">
+            <div
+              class="flex lg:flex-row flex-col justify-between items-center lg:gap-[20px]"
+            >
               <select
                 class="w-full border border-[#BDBDBD] bg-[#F9F9F9] rounded-[5px] px-[15px] py-[10px] mb-[10px] mt-[10px]"
               >
@@ -688,7 +725,9 @@
     <!-- consulting -->
     <section class="consulting py-[40px]">
       <div class="max-w-full w-[1300px] mx-auto">
-        <div class="flex lg:flex-row flex-col justify-between items-center lg:gap-0 gap-[50px]">
+        <div
+          class="flex lg:flex-row flex-col justify-between items-center lg:gap-0 gap-[50px]"
+        >
           <div>
             <h2 class="text-2xl font-bold lg:text-left text-center">
               Consulting Agency For Your Business
@@ -711,7 +750,9 @@
     <!-- footer -->
     <footer class="footer py-[50px] bg-[#252B42]">
       <div class="max-w-full w-[1300px] mx-auto">
-        <div class="flex md:flex-row flex-col justify-between md:items-center items-start md:gap-0 gap-[50px]">
+        <div
+          class="flex md:flex-row flex-col justify-between md:items-center items-start md:gap-0 gap-[50px]"
+        >
           <a class="logo text-white text-2xl font-bold"> Sprivaten </a>
           <div class="flex justify-end items-center">
             <a href="" class="block md:ml-[20px]">
@@ -823,7 +864,9 @@
 
         <div class="bg-[#364067] h-[1px] w-full my-[60px]"></div>
 
-        <div class="flex lg:flex-row flex-col justify-between items-start gap-[5px]">
+        <div
+          class="flex lg:flex-row flex-col justify-between items-start gap-[5px]"
+        >
           <div>
             <p class="font-bold text-white mb-[20px]">Company Info</p>
 
@@ -888,7 +931,7 @@
             <p class="font-bold text-white mb-[20px]">Get In Touch</p>
 
             <form
-              class="flex justify-between items-center border border-[#E6E6E6] overflow-hidden bg-[#F9F9F9] rounded-[5px]"
+              class="flex justify-between items-center border border-[#E6E6E6] overflow-hidden bg-[#F9F9F9] rounded-[5px] form"
             >
               <input
                 placeholder="Your Email"
@@ -920,6 +963,55 @@
     </section>
     <!-- copy -->
 
+    <!-- modal confirm -->
+    <div
+      class="modal opacity-0 pointer-events-none fixed w-full h-full top-0 left-0 flex items-center justify-center"
+      id="modal"
+    >
+      <div
+        class="modal-overlay absolute w-full h-full bg-gray-900 opacity-50"
+      ></div>
+
+      <div
+        class="modal-container bg-white w-[600px] md:max-w-[500px] mx-auto rounded shadow-lg z-50 overflow-y-auto"
+      >
+        <div
+          class="modal-close absolute top-0 right-0 cursor-pointer flex flex-col items-center mt-4 mr-4 text-white text-sm z-50"
+        >
+          <svg
+            class="fill-current text-white"
+            xmlns="http://www.w3.org/2000/svg"
+            width="18"
+            height="18"
+            viewBox="0 0 18 18"
+          >
+            <path
+              class="heroicon-ui"
+              d="M6.293 6.293a1 1 0 011.414 0L9 7.586l1.293-1.293a1 1 0 111.414 1.414L10.414 9l1.293 1.293a1 1 0 01-1.414 1.414L9 10.414l-1.293 1.293a1 1 0 01-1.414-1.414L7.586 9 6.293 7.707a1 1 0 010-1.414z"
+            />
+          </svg>
+          <span class="text-sm">(Esc)</span>
+        </div>
+
+        <!-- Add margin if you want to see some of the overlay behind the modal-->
+        <div class="modal-content py-4 text-left px-6">
+          <!--Title-->
+          <div class="flex justify-end relative items-center pb-3">
+            <div class="modal-close cursor-pointer z-50">
+              <i class="fa fa-times"></i>
+            </div>
+          </div>
+          <p class="text-2xl font-bold text-center">Thank You!</p>
+          <p class="mb-6 text-center">
+            We will contact you as soon as possible.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- modal confirm -->
+
     <script src="https://cdn.tailwindcss.com"></script>
+    <script src="js/app.js"></script>
   </body>
 </html>
