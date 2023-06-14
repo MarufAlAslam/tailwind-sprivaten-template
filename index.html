@@ -965,7 +965,7 @@
 
     <!-- modal confirm -->
     <div
-      class="modal opacity-0 pointer-events-none fixed w-full h-full top-0 left-0 flex items-center justify-center"
+      class="modal opacity-0 pointer-events-none fixed z-[10000000000000] w-full h-full top-0 left-0 flex items-center justify-center"
       id="modal"
     >
       <div
@@ -976,29 +976,16 @@
         class="modal-container bg-white w-[600px] md:max-w-[500px] mx-auto rounded shadow-lg z-50 overflow-y-auto"
       >
         <div
-          class="modal-close absolute top-0 right-0 cursor-pointer flex flex-col items-center mt-4 mr-4 text-white text-sm z-50"
+          class="modal-close absolute top-0 right-0 cursor-pointer flex flex-col items-center mt-4 mr-4 text-white text-sm z-[1000000000000000]"
           id="modal-close"
         >
-          <svg
-            class="fill-current text-white"
-            xmlns="http://www.w3.org/2000/svg"
-            width="18"
-            height="18"
-            viewBox="0 0 18 18"
-          >
-            <path
-              class="heroicon-ui"
-              d="M6.293 6.293a1 1 0 011.414 0L9 7.586l1.293-1.293a1 1 0 111.414 1.414L10.414 9l1.293 1.293a1 1 0 01-1.414 1.414L9 10.414l-1.293 1.293a1 1 0 01-1.414-1.414L7.586 9 6.293 7.707a1 1 0 010-1.414z"
-            />
-          </svg>
-          <span class="text-sm">(Esc)</span>
         </div>
 
         <!-- Add margin if you want to see some of the overlay behind the modal-->
         <div class="modal-content py-4 text-left px-6">
           <!--Title-->
           <div class="flex justify-end relative items-center pb-3">
-            <div class="modal-close cursor-pointer z-50">
+            <div class="modal-close cursor-pointer z-50 bg-red-500 w-[40px] h-[40px] rounded-full flex justify-center items-center text-white cursor-pointer" id="modal-close">
               <i class="fa fa-times"></i>
             </div>
           </div>
